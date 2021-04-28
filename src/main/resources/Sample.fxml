@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="608.0" prefWidth="760.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+
+  <children>
+      <TabPane layoutX="-4.0" layoutY="-3.0" prefHeight="616.0" prefWidth="766.0" style="-fx-background-color: light grey;" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="Home">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="553.0" prefWidth="721.0">
+                     <children>
+                        <ImageView fitHeight="141.0" fitWidth="147.0">
+                           <image>
+                              <Image url="@Kee+West+Farm.jpg" />
+                           </image>
+                        </ImageView>
+                        <Pane layoutX="32.0" layoutY="150.0" prefHeight="419.0" prefWidth="286.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="59.0" layoutY="14.0" text="Notification Center">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextArea editable="false" layoutX="14.0" layoutY="68.0" prefHeight="167.0" prefWidth="263.0" text="No Unseen Notifications" />
+                              <Label layoutX="13.0" layoutY="48.0" text="Unseen Notifications">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="13.0" layoutY="241.0" text="Past Notifications">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea editable="false" layoutX="14.0" layoutY="261.0" prefHeight="152.0" prefWidth="265.0" text="All Client Bills From 03/05/20 have been paid&#10;Bills sent out 03/05/20&#10;Meeage From Marissa Rose&#10;Overdue Bill from 01/05/20&#10;Bills sent out 02/05/20" />
+                           </children>
+                        </Pane>
+                        <Pane layoutX="384.0" layoutY="14.0" prefHeight="166.0" prefWidth="368.0" style="-fx-border-color: black;">
+                           <children>
+                              <Label layoutX="139.0" layoutY="14.0" text="Bill Center">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="13.0" layoutY="48.0" text="Current Amount Owed:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="320.0" layoutY="48.0" text="\$0.00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="131.0" layoutY="68.0" text="View Unpaid Bills">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="13.0" layoutY="101.0" text="Current Amount Overdue:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="320.0" layoutY="101.0" text="\$0.00">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="131.0" layoutY="121.0" text="View Overdue Bills">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="416.0" layoutY="180.0" text="Current Horses Boarded At Barn">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="horses" fixedCellSize="0.0" layoutX="384.0" layoutY="210.0" prefHeight="207.0" prefWidth="365.0">
+                          <columns>
+                            <TableColumn prefWidth="96.0" text="Horse" />
+                            <TableColumn prefWidth="128.0" text="Owner" />
+                              <TableColumn prefWidth="139.0" text="Horse Show Name" />
+                          </columns>
+                        </TableView>
+                        <TableView fx:id="lessons" fixedCellSize="0.0" layoutX="377.0" layoutY="450.0" prefHeight="123.0" prefWidth="379.0">
+                           <columns>
+                              <TableColumn prefWidth="96.0" text="Horse" />
+                              <TableColumn prefWidth="128.0" text="Owner" />
+                              <TableColumn prefWidth="139.0" text="Horse Show Name" />
+                           </columns>
+                        </TableView>
+                        <Label layoutX="452.0" layoutY="420.0" text="Lessons From Yesterday">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="My Profile">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="522.0" prefWidth="471.0">
+                     <children>
+                        <ImageView fitHeight="141.0" fitWidth="147.0">
+                           <image>
+                              <Image url="@Kee+West+Farm.jpg" />
+                           </image>
+                        </ImageView>
+                        <TextField layoutX="603.0" layoutY="93.0" />
+                        <TextField layoutX="603.0" layoutY="58.0" />
+                        <Label layoutX="496.0" layoutY="14.0" text="Add Client">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="455.0" layoutY="58.0" text="Client Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="442.0" layoutY="93.0" text="Phone Number">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="496.0" layoutY="141.0" text="Add Horse">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="466.0" layoutY="190.0" text="Client ID">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="455.0" layoutY="222.0" text="Horse Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="603.0" layoutY="190.0" />
+                        <TextField layoutX="603.0" layoutY="222.0" />
+                        <Label layoutX="431.0" layoutY="255.0" text="Horse Show Name">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="603.0" layoutY="255.0" />
+                        <Label layoutX="184.0" layoutY="14.0" text="Remove Client">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="154.0" layoutY="46.0" text="Client ID">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="238.0" layoutY="46.0" />
+                        <Label layoutX="191.0" layoutY="78.0" text="Remove Horse">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="153.0" layoutY="118.0" text="Horse ID">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="238.0" layoutY="118.0" />
+                        <Label layoutX="108.0" layoutY="188.0" text="Add To Client Bill">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="47.0" layoutY="235.0" text="Client ID">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="164.0" layoutY="235.0" />
+                        <Label layoutX="24.0" layoutY="269.0" text="Amount to Add">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="164.0" layoutY="269.0" />
+                        <Label layoutX="43.0" layoutY="301.0" text="State reason for added cost below">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextArea layoutX="24.0" layoutY="326.0" prefHeight="239.0" prefWidth="332.0" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="View Overdue Bills">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="518.0">
+                     <children>
+                        <ImageView fitHeight="141.0" fitWidth="147.0">
+                           <image>
+                              <Image url="@Kee+West+Farm.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="47.0" layoutY="155.0" prefHeight="408.0" prefWidth="700.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Client ID" />
+                            <TableColumn prefWidth="180.0" text="Client Name" />
+                              <TableColumn prefWidth="180.0" text="Amount Owed" />
+                              <TableColumn prefWidth="264.0" text="Date of Last Payment" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="285.0" layoutY="56.0" text="Clients With Overdue Bills">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="View Client Billing History">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="518.0">
+                     <children>
+                        <ImageView fitHeight="141.0" fitWidth="147.0">
+                           <image>
+                              <Image url="@Kee+West+Farm.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label layoutX="311.0" layoutY="56.0" text="View Client Billing History">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <ListView layoutX="29.0" layoutY="252.0" prefHeight="309.0" prefWidth="237.0" />
+                        <Button layoutX="109.0" layoutY="206.0" mnemonicParsing="false" text="Pull Record" />
+                        <Label layoutX="46.0" layoutY="155.0" text="Select Client From List Below">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="57.0" layoutY="231.0" text="Click button after client is selected" />
+                        <TableView layoutX="295.0" layoutY="194.0" prefHeight="376.0" prefWidth="457.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Date of BIll" />
+                            <TableColumn prefWidth="102.0" text="Amount of Bill" />
+                              <TableColumn prefWidth="102.0" text="Date of Payment" />
+                              <TableColumn prefWidth="177.0" text="Download Itemized PDF" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="View Client List">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="518.0">
+                     <children>
+                        <ImageView fitHeight="141.0" fitWidth="147.0">
+                           <image>
+                              <Image url="@Kee+West+Farm.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView fx:id="clientTable" layoutX="14.0" layoutY="154.0" prefHeight="413.0" prefWidth="740.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Client ID" />
+                            <TableColumn prefWidth="298.0" text="Client Name" />
+                              <TableColumn prefWidth="92.0" text="Horses Boarded" />
+                              <TableColumn prefWidth="274.0" text="Phone Number" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="354.0" layoutY="56.0" text="Clients">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="View Next Month's Bills">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="537.0" prefWidth="518.0">
+                     <children>
+                        <ImageView fitHeight="141.0" fitWidth="147.0">
+                           <image>
+                              <Image url="@Kee+West+Farm.jpg" />
+                           </image>
+                        </ImageView>
+                        <TableView layoutX="24.0" layoutY="150.0" prefHeight="415.0" prefWidth="727.0">
+                          <columns>
+                            <TableColumn prefWidth="106.0" text="Client ID" />
+                            <TableColumn prefWidth="153.0" text="Client Name" />
+                              <TableColumn prefWidth="153.0" text="Amount Owed" />
+                              <TableColumn prefWidth="142.0" text="Lessons This Month" />
+                              <TableColumn prefWidth="172.0" text="Number of Horses Boarded" />
+                          </columns>
+                        </TableView>
+                        <Label layoutX="322.0" layoutY="71.0" text="Upcoming Bills">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+
+  </children>
+
+</Pane>
